@@ -1077,7 +1077,7 @@ def client():
 				
 			else:
 
-				FIN = 'Transfer failed.\nExiting now...'
+				FIN = 'Transfer successful.\nExiting now...'
 				for i in range(0,4):
 					try:
 						conns[i].send(FIN.encode())
@@ -1137,7 +1137,7 @@ def client():
 				
 			else:
 				# if the ordered list is not [1,2,3,4]
-				FIN = 'Transfer failed.\Exiting now...'
+				FIN = 'Transfer successful.\Exiting now...'
 				for i in range(0,4):
 					try:
 						conns[i].send(FIN.encode())
